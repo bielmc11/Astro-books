@@ -1,11 +1,29 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+
+const books = await getCollection('books')
+console.log(books)
 ---
 
 <Layout>
-	<Welcome />
+	<main>
+		<h1 class="text-7xl text-center font-extrabold">Astro <span class="block">Books 📖</span></h1>
+	</main>
+	<section araial-label="Libros recomendados">
+		<div class="px-4 mx-auto max-w-xl">
+			<div class="grid grid-cols-1 gap-6 md:grid-cols-2 text-amber-50 ">
+				<!-- {
+					books.map((book: any) => (
+						<div>Buenas</div>
+					))
+				} -->
+
+			</div>
+
+		</div>
+
+	</section>
 </Layout>
