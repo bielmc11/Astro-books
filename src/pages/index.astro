@@ -1,29 +1,58 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
 
-
-
-const books = await getCollection('books')
-console.log(books)
+const books = await getCollection("books");
 ---
 
 <Layout>
-	<main>
-		<h1 class="text-7xl text-center font-extrabold">Astro <span class="block">Books 📖</span></h1>
-	</main>
-	<section araial-label="Libros recomendados">
-		<div class="px-4 mx-auto max-w-xl">
-			<div class="grid grid-cols-1 gap-6 md:grid-cols-2 text-amber-50 ">
-				<!-- {
-					books.map((book: any) => (
-						<div>Buenas</div>
-					))
-				} -->
+  <main>
+    <h1 class="text-7xl text-center font-extrabold">
+      Astro <span class="block">Books 📖</span>
+    </h1>
+  </main>
 
-			</div>
+  <section class="mt-4" aria-label="Libros recomendados para programadores">
+    <div class="px-4 mx-auto max-w-screen-xl">
+      <div class="grid gap-6 md:grid-cols-2">
+        {
+          books.map((book) => {
+            const { slug, data } = book;
+            const { title, author, img, readtime, description, buy } = data;
 
-		</div>
+            return (
+              <article class="flex">
+                <a
+                  href={`/libro/${slug}`}
+                  class="mb-2 xl:mb-0 self-center transition hover:scale-110 "
+                >
+                  <img
+                  
+                    transition:name={`img-${slug}`}
+                    class=" pr-5 rounded max-w-62  "
+                    src={`/${img}`}
+                    alt={title}
+                  />
+                </a>
 
-	</section>
+                <div class="flex flex-col justify-center">
+                  <h2
+                    transition:name={`title-${slug}`}
+                    class="mb-2 text-2xl font-bold leading-tight text-white"
+                  >
+                    {title}
+                  </h2>
+
+                  <p class="mb-4 text-gray-300 max-w-sm line-clamp-3 ">
+                    {description}
+                  </p>
+                  <span class="text-xs">⏳ Lectura en {readtime} minutos</span>
+                </div>
+              </article>
+            );
+          })
+        }
+      </div>
+    </div>
+  </section>
 </Layout>
