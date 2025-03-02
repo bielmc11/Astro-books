@@ -8,6 +8,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  output: "server",
   env: {
     schema: {
       SHOW_BUY_BUTTON: envField.boolean({
@@ -15,7 +16,10 @@ export default defineConfig({
         access: "public",
         default: true,
       }),
-      SHOW_BOOK_SCORE: envField.string({ context: "client", access: "public" }),
+      SCORE_API_ENDPOINT: envField.string({
+        context: "server",
+        access: "public",
+      }),
     },
   },
 });
