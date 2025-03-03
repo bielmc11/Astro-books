@@ -26,11 +26,11 @@ const { title, author, img, readtime, description, buy } = data;
 
 const { Content } = await render(book);
 
-export const prerender = true;                             
+export const prerender = true;
 ---
 
 <Layout>
-  <div class="flex gap-12">
+  <div class="flex flex-col sm:flex-row gap-12">
     <aside class="flex flex-col items-center gap-4">
       <a href="/" class="hover:underline opacity-70">← Volver atrás</a>
       <img
@@ -39,29 +39,27 @@ export const prerender = true;
         src={`/${img}`}
         alt={title}
       />
-      
+
       {
-         SHOW_BUY_BUTTON && <BuyButton server:defer buy={buy} />
-      } 
-
-      <BookScore server:defer >
-        <span class="text-xs opacity-70" slot="fallback">Cargando puntuación...</span>
-      </BookScore>
-
-     <!--  { SHOW_BUY_BUTTON &&
-        (
-          <a
-            href={buy.spain}
-            title="Comprar libro"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-balance inline-flex gap-2 items-center bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-600 text-black font-bold py-2 px-4 rounded-lg border border-yellow-500 transition duration-200 ease-in-out hover:scale-105 justify-center text-center"
-          >
-            Comprar en Amazon
-            <AmazonLogo />
-          </a>
+        SHOW_BUY_BUTTON && (
+          <BuyButton server:defer buy={buy}>
+            <span
+              slot="fallback"
+              title="Comprar libro"
+              class="text-balance inline-flex gap-2 items-center bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-600 text-black font-bold py-2 px-4 rounded-lg border border-yellow-500 transition duration-200 ease-in-out hover:scale-105 justify-center text-center"
+            >
+              Comprar en Amazon
+              <AmazonLogo />
+            </span>
+          </BuyButton>
         )
-      } -->
+      }
+
+      <BookScore server:defer>
+        <span class="text-xs opacity-70" slot="fallback"
+          >Cargando puntuación...</span
+        >
+      </BookScore>
     </aside>
 
     <main class="max-w-3xl">
@@ -74,4 +72,3 @@ export const prerender = true;
     </main>
   </div>
 </Layout>
-

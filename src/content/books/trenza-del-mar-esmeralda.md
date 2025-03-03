@@ -5,8 +5,8 @@ img: trenza-del-mar-esmeralda.jpg
 readtime: 420
 description: "Ambientada en el mundo de *Mistborn*, *Trenza del Mar Esmeralda* es una emocionante mezcla de fantasía y western. Siglos después de los eventos de la trilogía original, la sociedad ha evolucionado hacia una era industrial, y los antiguos poderes de la alomancia y la feruquimia se combinan con la tecnología moderna. Sigue a Waxillium Ladrian, un noble con habilidades únicas, mientras lucha contra criminales y descubre una conspiración que amenaza su ciudad."
 buy:
-  spain: https://amzn.to/3QZQZQZ
-  usa: https://www.amazon.com/Alloy-Law-Mistborn-Brandon-Sanderson/dp/0765330423
+  spain: https://www.amazon.es/Trenza-Esmeralda-Novela-Secreta-Nova/dp/8418037814/ref=sr_1_1?crid=NX79VOSZTWOK&dib=eyJ2IjoiMSJ9.FF55MNoZTlhbUEbaycxBFUfcpXqOn-Jb38nBzld2AbH17nT72khPXcpenySa-M6RMLxEVw9up2SXu3ezuDWMhpetY0xI9fBcm23cbYM9n_vyMfztoubNw9dbszAgpxdIMrzeOSJTQZrDDodakZo_j5EgtA_h0logStInneRMAOfn2UOcyWmmKikuSX1731a0FmvWz1KW198KYJ1_YqM9wKyLLwtqr_aRHxEFY4Mn52L2ctlx79z-wBCIizggNtH58xTd3yeaKfDKBW6KycpJeOukvSP4vpVdpL570rMC-Oqbj_U0-9Ph3rB_3R3CCrl3qo9p0pLnfWD0FgcOYO0l901eVIq9Bcaam2mEg0fPE8hCpjd3R3PJ3yt8TQ3KhQ_o.9BqfEDTGdnAORj8_yVQ6tA2OzC3Pm-8YkjVvnDiix8U&dib_tag=se&keywords=trenza+del+mar+esmeralda&qid=1741000216&sprefix=trenza+del+mar+esmer%2Caps%2C86&sr=8-1
+  usa: https://www.amazon.com/-/es/Tress-Emerald-Sea-Cosmere-Projects/dp/1250899664/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.DtJGDk4JouuoLyp6Z6yRdsp10mebVfV5tEl8VSkMgjrY9CcticFt2EXAtvR6b9yVa21sPvRWglp6L2EXONRcypLzbm__AvPumnWjnyPw3_MjFpHujgN3YS35yPnE4MdwAhznCQEV8fvsx4Cd_ZxEd9D9ifxHfHoVxSvvg7tdLg18Fz9d-8CzlmwY42QjEzKmgp7I12f99QZAdSWqM7cAHOtw17O1ppKenUbMvu3icks.wJDeMfP-XLegZkVIaH7ZeWTJIZEPPd1mAbw5g4zfr6Y&qid=1741000231&sr=1-1
 ---
 
 *Trenza del Mar Esmeralda* es el primer libro de la segunda era de *Mistborn*, escrita por Brandon Sanderson. **Una novela que combina magistralmente elementos de fantasía, western y misterio, ambientada en un mundo donde la magia y la tecnología coexisten.** La historia tiene lugar 300 años después de los eventos de la trilogía original, en una sociedad que ha avanzado hacia una era industrial.
